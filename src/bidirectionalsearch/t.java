@@ -24,7 +24,7 @@ public class t extends Thread{
         for (int i = 0; i < 1000; i++) {
             System.out.println(id);
             try {
-                Thread.sleep(10);
+                Thread.sleep(1);
             } catch (InterruptedException ex) {
                 Logger.getLogger(t.class.getName()).log(Level.SEVERE, null, ex);
             }

@@ -105,4 +105,18 @@ public class main {
     }// End of function search
     
     
+      public static void ddd(int start, int end){
+          if(start!=end){
+              visited[start]=true;
+          }
+          
+          System.out.println("Visiting ->"+city_list[start]+"->");
+          for (int i = 0; i < number_of_cities; i++) {
+              if(visited[i]!=true && graph_matrix[start][i]!=0){
+                  ddd(i, end);
+              }
+          }
+      }
+    
+    
 }
